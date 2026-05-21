@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hyeon Blog</title>
+    <meta
+      name="description"
+      content="개발과 배움의 기록을 남기는 개인 블로그입니다."
+    >
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="./index.html">Hyeon Blog</a>
+      <nav class="nav" aria-label="주요 메뉴">
+        <a href="./index.html" aria-current="page">글</a>
+        <a href="./about.html">소개</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="intro">
+        <p class="eyebrow">Developer Notes</p>
+        <h1>배운 것과 만든 것을 짧고 정확하게 기록합니다.</h1>
+        <p>
+          프로젝트를 진행하며 마주친 문제, 해결 과정, 기술 선택의 이유를
+          나중에 다시 읽을 수 있는 형태로 정리합니다.
+        </p>
+      </section>
+
+      <section class="post-list" aria-labelledby="latest-posts">
+        <div class="section-heading">
+          <h2 id="latest-posts">최근 글</h2>
+          <p>새 글은 <code>posts</code> 폴더에 HTML 파일로 추가하면 됩니다.</p>
+        </div>
+
+        <article class="post-card">
+          <div>
+            <p class="post-meta">2026.05.21 · GitHub Pages</p>
+            <h3>
+              <a href="./posts/hello-github-pages.html">
+                GitHub Pages 블로그 시작하기
+              </a>
+            </h3>
+            <p>
+              빌드 도구 없이 정적 HTML과 CSS만으로 배포 가능한 블로그 구조를
+              만들었습니다.
+            </p>
+          </div>
+          <a class="read-more" href="./posts/hello-github-pages.html">읽기</a>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 Hyeon Blog. Built for GitHub Pages.</p>
+    </footer>
+  </body>
+</html>
