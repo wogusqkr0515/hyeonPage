@@ -19,7 +19,7 @@ GitHub Pages에서 바로 배포할 수 있는 정적 블로그입니다.
 ## 새 글 추가
 
 1. `posts` 폴더에 새 HTML 파일을 만듭니다.
-2. 기존 `posts/hello-github-pages.html` 구조를 복사해 내용을 수정합니다.
+2. 기존 페이지 구조를 참고해 제목, 날짜, 본문을 작성합니다.
 3. `index.html`의 `최근 글` 섹션에 새 글 링크를 추가합니다.
 
 ## 파일 구조
@@ -31,6 +31,5 @@ GitHub Pages에서 바로 배포할 수 있는 정적 블로그입니다.
 ├── 404.html
 ├── styles.css
 ├── posts/
-│   └── hello-github-pages.html
 └── README.md
 ```
