@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>박재현 이력서</title>
+<style>
+  :root {
+    --ink: #1a1a1a;
+    --ink-soft: #4a4a4a;
+    --muted: #888888;
+    --hairline: #d8d8d8;
+    --accent: #1e3a5f;
+    --tag-bg: #f3f4f6;
+  }
+
+  @page { size: A4; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html, body {
+    font-family: -apple-system, "Apple SD Gothic Neo", "Pretendard", "Noto Sans KR", "Malgun Gothic", sans-serif;
+    color: var(--ink);
+    background: #f5f5f5;
+    font-size: 10.5pt;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .page {
+    width: 210mm;
+    min-height: 297mm;
+    padding: 16mm 18mm;
+    margin: 24px auto;
+    background: #fff;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  }
+
+  @media print {
+    html, body { background: #fff; }
+    .page { box-shadow: none; margin: 0; }
+  }
+
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 4mm;
+    margin-bottom: 8mm;
+    border-bottom: 2px solid var(--accent);
+  }
+  h1 {
+    font-size: 30pt;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+    line-height: 1;
+  }
+  .contact {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2mm;
+    font-size: 9.5pt;
+    color: var(--ink-soft);
+    text-align: right;
+  }
+  .contact .row { display: flex; gap: 5mm; justify-content: flex-end; align-items: baseline; }
+  .contact .k {
+    color: var(--muted);
+    font-weight: 700;
+    font-size: 8.5pt;
+    letter-spacing: 0.08em;
+    min-width: 16mm;
+    text-align: right;
+  }
+
+  /* Layout */
+  main {
+    display: grid;
+    grid-template-columns: 1fr 54mm;
+    gap: 11mm;
+  }
+
+  section { margin-bottom: 7mm; }
+  section:last-child { margin-bottom: 0; }
+
+  h2 {
+    font-size: 10pt;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent);
+    border-bottom: 1.5px solid var(--accent);
+    padding-bottom: 1.5mm;
+    margin-bottom: 3.5mm;
+  }
+
+  /* Job block */
+  .job { margin-bottom: 5mm; }
+  .job:last-child { margin-bottom: 0; }
+
+  .job-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 1mm;
+  }
+  .job-title {
+    font-size: 11.5pt;
+    font-weight: 700;
+    color: var(--ink);
+  }
+  .job-meta {
+    font-size: 9.5pt;
+    color: var(--muted);
+    font-feature-settings: "tnum";
+  }
+  .job-org {
+    font-size: 10pt;
+    color: var(--ink-soft);
+    margin-bottom: 2.5mm;
+  }
+
+  /* Project under job */
+  .project { margin-bottom: 2.8mm; padding-left: 3.5mm; border-left: 2px solid var(--hairline); }
+  .project:hover { border-left-color: var(--accent); }
+
+  .project-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.8mm;
+  }
+  .project-title {
+    font-weight: 600;
+    font-size: 10pt;
+    color: var(--ink);
+  }
+  .project-period {
+    font-size: 9pt;
+    color: var(--muted);
+    font-feature-settings: "tnum";
+    white-space: nowrap;
+    margin-left: 4mm;
+  }
+  .project-desc {
+    font-size: 9.5pt;
+    color: var(--ink-soft);
+    line-height: 1.55;
+  }
+
+  /* Sidebar */
+  aside.side h2 { font-size: 9.5pt; }
+  .side .item { margin-bottom: 3.5mm; }
+  .side .item:last-child { margin-bottom: 0; }
+  .side .label {
+    font-weight: 700;
+    font-size: 8.5pt;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 1.5mm;
+  }
+  .side .sub {
+    color: var(--ink-soft);
+    font-size: 9.5pt;
+    line-height: 1.55;
+  }
+  .side .sub strong { color: var(--ink); font-weight: 700; }
+  .tag-list { display: flex; flex-wrap: wrap; gap: 4px 5px; }
+  .tag {
+    font-size: 9pt;
+    padding: 1.5px 7px;
+    background: var(--tag-bg);
+    border-radius: 3px;
+    color: var(--ink-soft);
+    font-weight: 500;
+  }
+  .country {
+    font-size: 9.5pt;
+    color: var(--ink-soft);
+    line-height: 1.7;
+    font-feature-settings: "tnum";
+  }
+  .country div { margin-bottom: 1.5mm; }
+  .country div:last-child { margin-bottom: 0; }
+  .country .yr {
+    display: block;
+    color: var(--muted);
+    font-size: 8.5pt;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+  }
+  .country .place { color: var(--ink); font-weight: 500; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header>
+    <h1>박재현</h1>
+    <div class="contact">
+      <div class="row"><span class="k">EMAIL</span><span>wogusqkr0515@gmail.com</span></div>
+      <div class="row"><span class="k">GITHUB</span><span>github.com/wogusqkr0515</span></div>
+    </div>
+  </header>
+
+  <main>
+    <div class="main-col">
+
+      <section>
+        <h2>Experience</h2>
+
+        <div class="job">
+          <div class="job-head">
+            <div class="job-title">Server Engineer</div>
+            <div class="job-meta">2024.10 — 현재</div>
+          </div>
+          <div class="job-org">KCC IT 생산/품질팀, Spring Boot 기반 MES/ERP/TQM 백엔드 개발 및 운영</div>
+
+          <div class="project">
+            <div class="project-row">
+              <div class="project-title">글로벌 TQM 품질관리 시스템 신규 구축</div>
+              <div class="project-period">2025.09 — 현재</div>
+            </div>
+            <div class="project-desc">6개 모듈(DCS, 8D, QAA, Audit, PPAP, Idea&amp;Suggestion) 설계 및 개발. 6개국 배포 공통/현지화 분리 아키텍처(설정값 기반) 설계, Phase1 중국/일본 오픈, Phase2 미국/이탈리아/독일/영국 확장. 사내 AI 코딩 어시스턴트 도입 및 세미나로 전산 조직 확산.</div>
+          </div>
+
+          <div class="project">
+            <div class="project-row">
+              <div class="project-title">글로벌 MES 신규 구축</div>
+              <div class="project-period">2025.04 — 2025.08</div>
+            </div>
+            <div class="project-desc">브라질/영국/태국 3개국 5개 공장 백엔드 개발. 국가별 숫자 포맷 이슈를 응답 인터셉트 로직으로 한 곳에서 해결, 추가 국가 배포에서 동일 이슈 재발 0건. 현업-개발팀 소통 및 Go-Live 현장 안정화, 다국적 팀(중국/인도/독일/미국) 협업.</div>
+          </div>
+
+          <div class="project">
+            <div class="project-row">
+              <div class="project-title">AVEVA PI 대체 실시간 모니터링 시스템 자체 개발</div>
+              <div class="project-period">2025.04 — 2025.05</div>
+            </div>
+            <div class="project-desc">WebSocket 기반 실시간 스트리밍 아키텍처 설계부터 배포까지 전담(1인, 2개월). MES 데이터 통합 분석 대시보드 구현, 연간 라이선스 비용 약 80% 절감.</div>
+          </div>
+
+          <div class="project">
+            <div class="project-row">
+              <div class="project-title">레거시 시스템 마이그레이션 (C#/.NET → Spring Boot)</div>
+              <div class="project-period">2024.12 — 2025.02</div>
+            </div>
+            <div class="project-desc">12년된 문서 없는 코드 역분석으로 프로세스 다이어그램 및 API 사양서 작성. 해외 법인 공통 배포 구조 재설계로 신규 기능 리드타임 약 80% 단축.</div>
+          </div>
+
+          <div class="project">
+            <div class="project-row">
+              <div class="project-title">SAP 대체 자체 ERP 개발</div>
+              <div class="project-period">2025.12 — 2026.01</div>
+            </div>
+            <div class="project-desc">Material Master Data(품목 마스터, BOM, 공정 라우팅) MSSQL 기반 데이터 모델 설계. ERP-MES 간 데이터 정합성 확보 연동 아키텍처 구축.</div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Internship</h2>
+        <div class="job">
+          <div class="job-head">
+            <div class="job-title">현장실습생 (이진씨엔에스)</div>
+            <div class="job-meta">2022.03 — 2022.08</div>
+          </div>
+          <div class="job-org">부산은행 "마이데이터 재제공/기관 간 전송" 프로젝트 참여</div>
+        </div>
+      </section>
+
+    </div>
+
+    <aside class="side">
+
+      <section>
+        <h2>Education</h2>
+        <div class="item">
+          <div class="sub"><strong>부산대학교</strong><br>전기컴퓨터공학부<br>정보컴퓨터공학 전공<br>2018.03 — 2024.08</div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Tech Stack</h2>
+        <div class="item">
+          <div class="label">Language</div>
+          <div class="tag-list">
+            <span class="tag">Java</span>
+            <span class="tag">JavaScript</span>
+          </div>
+        </div>
+        <div class="item">
+          <div class="label">Framework</div>
+          <div class="tag-list">
+            <span class="tag">Spring Boot</span>
+            <span class="tag">JPA</span>
+            <span class="tag">MyBatis</span>
+          </div>
+        </div>
+        <div class="item">
+          <div class="label">Database</div>
+          <div class="tag-list">
+            <span class="tag">MSSQL</span>
+            <span class="tag">Oracle</span>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Global On-Site</h2>
+        <div class="country">
+          <div><span class="yr">2026.02–03</span><span class="place">인도</span> 개발자 대상 TQM/AI 교육</div>
+          <div><span class="yr">2025.09</span><span class="place">중국</span> TQM Phase 1 Go-Live</div>
+          <div><span class="yr">2025.07–08</span><span class="place">태국</span> MES Go-Live</div>
+          <div><span class="yr">2025.04–05</span><span class="place">영국</span> MES Go-Live</div>
+          <div><span class="yr">2025.04</span><span class="place">브라질</span> MES Go-Live</div>
+        </div>
+      </section>
+
+    </aside>
+  </main>
+
+</div>
+</body>
+</html>
