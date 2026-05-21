@@ -12,7 +12,10 @@
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="../index.html">Hyeon Blog</a>
+      <a class="brand" href="../index.html">
+        <span class="brand-mark">HB</span>
+        <span>Hyeon Blog</span>
+      </a>
       <nav class="nav" aria-label="주요 메뉴">
         <a href="../index.html">글</a>
         <a href="../about.html">소개</a>
@@ -22,9 +25,12 @@
     <main class="page">
       <article class="content">
         <a class="back-link" href="../index.html">← 글 목록</a>
-        <p class="post-meta">2026.05.21 · GitHub Pages</p>
+        <div class="post-meta">
+          <time datetime="2026-05-21">2026.05.21</time>
+          <span>GitHub Pages</span>
+        </div>
         <h1>GitHub Pages 블로그 시작하기</h1>
-        <p>
+        <p class="lead">
           이 블로그는 별도의 빌드 과정 없이 GitHub Pages에서 바로 서비스할 수
           있도록 구성했습니다. HTML 파일과 CSS 파일만 있으면 충분합니다.
         </p>
@@ -41,6 +47,14 @@
           <strong>Deploy from a branch</strong>, 브랜치를 <strong>main</strong>,
           폴더를 <strong>/root</strong>로 선택하면 됩니다.
         </p>
+
+        <aside class="callout">
+          <strong>운영 팁</strong>
+          <p>
+            글이 많아지면 날짜, 주제, 요약을 기준으로 목록을 정리하고 필요할 때
+            Jekyll이나 Astro 같은 정적 사이트 생성기로 옮기면 됩니다.
+          </p>
+        </aside>
       </article>
     </main>
 
